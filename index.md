@@ -1,37 +1,229 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
 
-You can use the [editor on GitHub](https://github.com/imbaesible/tindog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
-### Markdown
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/7dae364dac.js" crossorigin="anonymous"></script>
 
-```markdown
-Syntax highlighted code block
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
 
-# Header 1
-## Header 2
-### Header 3
+<body>
 
-- Bulleted
-- List
+  <section id="title">
 
-1. Numbered
-2. List
+  <div class="container-fluid">
 
-**Bold** and _Italic_ and `Code` text
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">tindog</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cta">Download</a>
+            </li>
+        </ul>
+     </div>
+    </nav>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+    <!-- Title -->
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/imbaesible/tindog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <div class="row">
+      <div class="col-lg-6 ">
+        <h1>Meet new and interesting dogs nearby.</h1>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+      </div>
 
-### Support or Contact
+      <div class="col-lg-6 ">
+        <img src="images/iphone6.png" alt="iphone-mockup" class="title-img">
+      </div>
+    </div>
+  </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-check-circle fa-4x"></i>
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-bullseye fa-4x"></i>
+            <h3>Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-heart fa-4x"></i>
+            <h3>Guaranteed to work.</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+          </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img src="images/dog-img.jpg" class="testimonial-image" alt="dog-profile">
+      <em>Pebbles, New York</em>
+    </div>
+    <div class="carousel-item">
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+      <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+      <em>Beverly, Illinois</em>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+
+  </a>
+</div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-image" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-image" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Chihuahua</h3>
+        </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Labrador</h3>
+        </div>
+        <div class="card-body">
+          <h2>$49 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4">
+      <div class="card">
+        <div class="card-header">
+              <h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+        </div>
+        </div>
+    </div>
+
+  </div>
+
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="social-icon fab fa-facebook"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fab fa-envelope"></i>
+    <p>© Copyright 2020 TinDog</p>
+
+  </footer>
+
+
+</body>
+
+</html>
